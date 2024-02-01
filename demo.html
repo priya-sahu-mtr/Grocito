@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="demo.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+     <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- AOS library script -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+   <!-- AOS initialization script -->
+   <script>
+       AOS.init({
+        duration:1200,
+       }
+       );
+   </script>
+
+ 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Grocery Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid middle-content">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sticky-top ">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <div class="side-content">
+                            <img src="jackeet.png" class="side-img"/>
+                            <a class="nav-link active" href="#">
+                                Jackets
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="denim.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Denim
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="jeans.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Jeans
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="shoes.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Shoes
+                            </a>
+                        </div>
+                        <div class="side-content">  
+                            <img src="woolen.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Woolen
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="pant.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Pant
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="trouser.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Trousers
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="shirt.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Shirts
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="tops.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Tops & Tunic
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="hooddie.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Hoodies
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="bracelet.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Bracelets
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="ring.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Rings
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="laptop.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Laptops
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="lcd.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                LCD
+                            </a>
+                        </div>
+                        <!-- <div class="side-content">
+                            <img src="hd.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Hard Disk
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="laptop.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Laptops
+                            </a>
+                        </div>
+                        <div class="side-content">
+                            <img src="pandrive.png" class="side-img"/>
+                            <a class="nav-link" href="#">
+                                Pendrive
+                            </a>
+                        </div> -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content area -->
+            <main role="main" class="col-md-9 col-lg-10 product">
+
+                <!-- Product List -->
+                    <h2 class="main-heading" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1200">Buy Product </h2>            
+                <div id="product-list" class="row"></div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Dummy API for product data (replace with your actual API endpoint) -->
+    <script>
+        // Dummy API endpoint
+        const apiEndpoint = 'https://fakestoreapi.com/products';
+
+        // Fetch product menu and list data from the dummy API
+        async function fetchData() {
+            try {
+                const response = await fetch(apiEndpoint);
+                const data = await response.json();
+                updateProductList(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+        function truncateText(text, numWords) {
+    const words = text.split(' ');
+    const truncatedText = words.slice(0, numWords).join(' ');
+
+    if (words.length > numWords) {
+        return truncatedText + ' ...';
+    } else {
+        return truncatedText;
+    }
+}
+        function updateProductList(data) {
+            const productListContainer = document.getElementById('product-list');
+
+            // You can create dynamic product items based on your data
+            data.slice(0, 20).forEach(item => {
+                const title = truncateText(item.title, 3);
+                const stars = '★'.repeat(Math.floor(item.rating.rate));
+                const emptyStars = '☆'.repeat(5 - Math.floor(item.rating.rate));
+                productListContainer.innerHTML += `
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <div class="card box-shadow d-flex flex-column h-100">
+                            <img src="${item.image}" class="card-img-top product-img" alt="${item.title}" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1200">
+                            <div class="card-body">
+                                <h5 class="card-title" id="textContainer">${title}</h5>
+                                <p class="card-text">Product details go here.</p>
+                                <p class="card-text">${stars}${emptyStars}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <h5 class="text-muted">${item.price}</h5>
+                                </div>
+                            </div
+                        </div>
+                    </div>
+                `;
+            });
+        }
+          
+        // Fetch data when the page is loaded
+        window.onload = fetchData;
+    // </script>
+
+</body>
+
+</html>
